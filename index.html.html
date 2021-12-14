@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fatin Juliana's Website</title>
+	<style>
+		body {
+			background-image: url(https://wallpaperaccess.com/full/1657858.jpg);
+			background-size: 100%;
+			text-align: center;
+			font-size: 16px;
+		}
+
+
+	</style>
+	<link rel="stylesheet" href="css_style.css">
+</head>
+<body onload="startTime()">
+
+<h2>JavaScript Clock</h2>
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+<div class="header">
+	<h1>Fatin Juliana's Website</h1>
+	<p>Be Free, Be True, Be You</p>
+</div>
+
+<div class="navbar">
+	<a href="#">Home</a>
+
+	<a href="file:///C:/Users/Dell/Documents/SEMESTER%205%20D1IM1105E/IMD311%20Introduction%20to%20Web%20Content%20Management%20and%20Design/Ind.%20Assign.%20Personal%20Website%20IMD311/Biodata.html" target="_blank">Biodata</a>
+
+	<a href="file:///C:/Users/Dell/Documents/SEMESTER%205%20D1IM1105E/IMD311%20Introduction%20to%20Web%20Content%20Management%20and%20Design/Ind.%20Assign.%20Personal%20Website%20IMD311/Education.html" target="_blank">Education</a>
+
+	<a href="file:///C:/Users/Dell/Documents/SEMESTER%205%20D1IM1105E/IMD311%20Introduction%20to%20Web%20Content%20Management%20and%20Design/Ind.%20Assign.%20Personal%20Website%20IMD311/experience.html"target="_blank">Experience</a>
+
+	<a href="file:///C:/Users/Dell/Documents/SEMESTER%205%20D1IM1105E/IMD311%20Introduction%20to%20Web%20Content%20Management%20and%20Design/Ind.%20Assign.%20Personal%20Website%20IMD311/family.html"target="_blank">Family</a>
+
+	<a href="file:///C:/Users/Dell/Documents/SEMESTER%205%20D1IM1105E/IMD311%20Introduction%20to%20Web%20Content%20Management%20and%20Design/Ind.%20Assign.%20Personal%20Website%20IMD311/gallery.html"target="_blank">Gallery</a>
+
+	<a href="#">Video</a>
+
+	<a href="#" class="right">About Me</a>	
+</div>
+
+<div class="row">
+	
+	<div class="main"><ins style="font-size: larger;">About Me</ins></div>
+</div>
+
+<div class="row">
+	<div class="side"><b><mark>Name</mark></b><i style="color: darkblue; background: thistle;">: Fatin Juliana Binti Zakaria</i></div>
+</div>
+
+<div class="side"><b><mark>Group</mark></b><i style="color: darkblue; background: thistle;">: IM1105E</i></div>
+
+<div class="side"><b><mark>Program</mark></b><i style="color: darkblue; background: thistle;">: Diploma in Information Management</i></div>
+
+<div class="side"><b><mark>Course</mark></b><i style="color: darkblue; background: thistle;">: Introduction to Web Content Management and Design</i></div>
+
+<div class="side"><b><mark>Course Code</mark></b><i style="color: darkblue; background: thistle;">: IMD311</i></div>
+
+<div class="side"><b><mark>Prepared for</mark></b><i style="color: darkblue; background: thistle;">: Nur Ainatul Mardiah Mat Nawi</i></div>
+
+<div class="footer">
+	<h2><button type="button"></button></h2>
+</div>
+
+
+</body>
+</html>
