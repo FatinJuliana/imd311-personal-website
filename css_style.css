@@ -63,4 +63,52 @@
 		text-align: center;
 		background: #ddd;
 	}
+
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  background-color: #ededed;
+}
+
+.footer {
+  padding: 5px 0;
+  background-color: #C5C6D0;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #4267B3;
+}
+
+.footer .social a {
+  font-size: 20px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 120px;
+  height: 10px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+	.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+	}
 	</style>
